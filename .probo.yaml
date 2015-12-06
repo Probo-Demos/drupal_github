@@ -1,0 +1,10 @@
+assets:     
+  - drupal_github.sql.gz
+steps:
+  - name: Probo site setup
+    plugin: Drupal
+    database: drupal_github.sql.gz
+    databaseGzipped: true
+    databaseUpdates: true
+    revertFeatures: true
+    clearCaches: true
