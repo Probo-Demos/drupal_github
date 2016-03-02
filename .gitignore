@@ -7,3 +7,7 @@ sites/*/private
 
 .idea/*
 .idea/vcs.xml
+
+dev.sql.gz
+
+sites/drupal-github.dd
