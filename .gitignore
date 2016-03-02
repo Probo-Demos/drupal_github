@@ -4,3 +4,10 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+.idea/*
+.idea/vcs.xml
+
+dev.sql.gz
+
+sites/drupal-github.dd
