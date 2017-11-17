@@ -1,10 +1,9 @@
-assets:     
-  - drupal_github.sql.gz
+image: proboci/ubuntu-16.04-lamp:php7.2-nightly
 steps:
-  - name: Probo site setup
+  - name: Provision Drupal
     plugin: Drupal
-    database: drupal_github.sql.gz
-    databaseGzipped: true
-    databaseUpdates: true
-    revertFeatures: true
-    clearCaches: true
+    runInstall: standard
+    settingsRequireFile: 'site-settings.php'
+    settingsAppend: |
+      $bar = 'baz';
+      $foo = 'stuff';
